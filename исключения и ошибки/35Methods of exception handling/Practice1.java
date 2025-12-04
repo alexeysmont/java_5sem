@@ -8,6 +8,7 @@ public class Practice1 {
         }
         
         // исключение не будет перехвачено 
+        
         String str = null;
         System.out.println(str.length());
     }

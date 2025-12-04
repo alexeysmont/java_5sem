@@ -1,7 +1,7 @@
 public class Practice1 {
     public class PublicInner {}      // доступен везде
     private class PrivateInner {}    // только в Practice1
-    protected class ProtectedInner {} // в Practice1 и подклассах
+    protected class ProtectedInner {} // вPractice1 и подклассах
     class PackageInner {}            // только в пакете
     
     public static void main(String[] args) {

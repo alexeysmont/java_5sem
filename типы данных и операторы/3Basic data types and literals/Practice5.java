@@ -6,7 +6,7 @@ public class Practice5 {
         float f = 2.5f;
         double d = 3.14;
         
-        // Автоматическое расширение типов
+        
         double result1 = b + f;     // byte -> float -> double
         long result2 = i + l;       // int -> long
         double result3 = l + d;     // long -> double

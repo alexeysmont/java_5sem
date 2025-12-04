@@ -36,13 +36,13 @@ public class Practice1 {
             case RED: System.out.println("enum"); break;
         }
         
-        // Byte (autounboxing)
+        // Byte 
         Byte byteObj = 1;
         switch(byteObj) {
             case 1: System.out.println("Byte"); break;
         }
         
-        // Character (autounboxing)
+        // Character 
         Character charObj = 'A';
         switch(charObj) {
             case 'A': System.out.println("Character"); break;

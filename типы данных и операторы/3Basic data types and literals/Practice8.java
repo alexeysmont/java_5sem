@@ -1,6 +1,5 @@
 public class Practice8 {
     public static void main(String[] args) {
-        // Type inference с var (Java 10+)
         var name = "Anna";           // String
         var age = 25;                // int
         var height = 1.65;           // double
@@ -14,6 +13,6 @@ public class Practice8 {
         System.out.println("list: " + list.getClass());
         
         // var нельзя использовать без инициализации
-        // var x; // ОШИБКА!
+        
     }
 }

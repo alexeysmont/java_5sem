@@ -7,7 +7,7 @@ public class Practice2 {
     class Inner {
         void access() {
             System.out.println(privateField);    // доступно
-            System.out.println(protectedField);  // доступно  
+            System.out.println(protectedField);  //доступно  
             System.out.println(publicField);     // доступно
             System.out.println(packageField);    // доступно
         }

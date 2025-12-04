@@ -1,11 +1,12 @@
 public class Practice2 {
     public static void main(String[] args) {
-        // Имя "Анна" в Unicode
-        System.out.println("\u0410\u043D\u043D\u0430");
+        // имя "Саша" в Unicode
+        System.out.println("\u0421\u0430\u0448\u0430");
         
-        // Альтернативный вариант
-        char a = '\u0410'; // А
-        char n = '\u043D'; // н
-        System.out.println("" + a + n + n + a);
+        // альтернативный вариант
+        char c = '\u0421'; // С
+        char a = '\u0430'; // а
+        char sh = '\u0448'; // ш
+        System.out.println("" + c + a + sh + a);
     }
 }

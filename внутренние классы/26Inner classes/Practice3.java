@@ -1,7 +1,7 @@
 public class Practice3 {
     void accessInner() {
         Inner inner = new Inner();
-        System.out.println(inner.privateField);  // недоступен
+        System.out.println(inner.privateField);  //недоступен
         System.out.println(inner.protectedField); // доступен (в том же классе)
         System.out.println(inner.publicField);    // доступен
         System.out.println(inner.packageField);   // доступен

@@ -1,5 +1,4 @@
 public class Practice1 {
-    // Переменные-члены класса (имеют нулевые значения по умолчанию)
     byte b;        // 0
     short s;       // 0  
     int i;         // 0
@@ -10,7 +9,7 @@ public class Practice1 {
     boolean bool;  // false
 
     public static void main(String[] args) {
-        // Локальные переменные (должны быть инициализированы)
+        // локальные переменные 
         byte b = 0;
         short s = 0;
         int i = 0;
@@ -20,6 +19,6 @@ public class Practice1 {
         char c = '\u0000';
         boolean bool = false;
         
-        System.out.println("Все переменные проинициализированы нулевыми значениями");
+        System.out.println("все переменные проинициализированы нулевыми значениями");
     }
 }
