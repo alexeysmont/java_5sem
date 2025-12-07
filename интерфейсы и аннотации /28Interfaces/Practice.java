@@ -1,32 +1,41 @@
-// практика 1: интерфейс без модификатора - package-private (доступен только в пакете)
-interface PackageInterface {
-    void method();
+// Practice.java
+
+// практика 1: interface Interface {...}
+// область видимости: package-private (по умолчанию)
+// доступен только классам в том же пакете
+
+// практика 2: public interface Interface {...}
+// область видимости: public
+// доступен всем классам из любого пакета
+
+// практика 3: protected interface Interface {...} - ошибка компиляции
+// интерфейсы не могут быть protected или private
+// допустимые модификаторы: public или по умолчанию (package-private)
+
+// практика 4: private interface Interface {...} - ошибка компиляции
+// интерфейсы не могут быть private
+// интерфейс должен быть реализован, private запрещает доступ из других классов
+
+interface ExampleInterface {
+    int CONSTANT = 10; // public static final
+    
+    void method(); // public abstract
 }
 
-// практика 2: public интерфейс - доступен везде
-public interface PublicInterface {
-    void method();
+abstract class AbstractClass implements ExampleInterface {
+    // Не реализует метод method()
+    // Должен быть abstract
 }
 
-// практика 3: protected интерфейс - ошибка компилцяии
-// protected interface ProtectedInterface {
-//     void method();
-// }
-
-// практика 4: private интерфейс - ошибка компиляции 
-// private interface PrivateInterface {
-//     void method();
-// }
-
-class Test implements PackageInterface, PublicInterface {
+class ConcreteClass implements ExampleInterface {
     public void method() {
-        System.out.println("Реализация метода");
+        System.out.println("CONSTANT = " + CONSTANT);
     }
 }
 
 public class Practice {
     public static void main(String[] args) {
-        Test test = new Test();
-        test.method();
+        ConcreteClass obj = new ConcreteClass();
+        obj.method();
     }
 }

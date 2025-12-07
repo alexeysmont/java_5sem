@@ -1,26 +1,26 @@
-interface InterfaceA {
+interface Interface1 {
     default void sameMethod() {
-        System.out.println("Method from InterfaceA");
+        System.out.println("Method from Interface1");
     }
 }
 
-interface InterfaceB {
+interface Interface2 {
     default void sameMethod() {
-        System.out.println("Method from InterfaceB");
+        System.out.println("Method from Interface2");
     }
 }
 
-class MyClass implements InterfaceA, InterfaceB {
-    //переопределяем конфликтующий метод
+class ConflictClass implements Interface1, Interface2 {
     @Override
     public void sameMethod() {
-        InterfaceA.super.sameMethod(); // вызываем конкретную реализацию
-        //или пишем свою реализацию
+        Interface1.super.sameMethod();
+        System.out.println("My own implementation");
     }
 }
 
 public class Practice2 {
     public static void main(String[] args) {
-        new MyClass().sameMethod();
+        ConflictClass obj = new ConflictClass();
+        obj.sameMethod();
     }
 }
