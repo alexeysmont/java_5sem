@@ -1,4 +1,3 @@
-// Practice1.java
 class Parent {
     private String privateField = "private доступен только в этом классе";
     String defaultField = "default доступен в том же пакете"; // без спецификатора
